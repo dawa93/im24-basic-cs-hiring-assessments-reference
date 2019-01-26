@@ -12,7 +12,7 @@ const answer = fs.readFileSync(problemPath).toString('utf-8')
 
 const result = {
     'class': theClass,
-    'student': student,
+    'name': student,
     'problem': 'authentication-deploy',
     'answer': answer,
     'passing': 0,

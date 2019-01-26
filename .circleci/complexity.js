@@ -19,7 +19,7 @@ const {
 
 const result = {
     'class': theClass,
-    'student': student,
+    'name': student,
     'problem': 'time-complexity',
     'answer': answer,
     'passing': 0,
