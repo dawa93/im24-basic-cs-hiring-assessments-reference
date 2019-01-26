@@ -7,13 +7,13 @@ const path = require('path')
 let studentInfo = require('../student.json')
 let {theClass, student} = studentInfo
 
-const problemPath = path.join(__dirname, '../git-test-basic/README.md')
+const problemPath = path.join(__dirname, '../html-log-input/index.html')
 const answer = fs.readFileSync(problemPath).toString('utf-8')
 
 const result = {
     'class': theClass,
     'name': student,
-    'problem': 'git-basic',
+    'problem': 'html',
     'answer': answer,
     'passing': 0,
     'failing': 0

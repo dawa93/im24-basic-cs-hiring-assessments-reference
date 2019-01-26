@@ -107,3 +107,8 @@ jobs:
           name: test html
           command: node .circleci/html.js
           when: always
+
+      - run:
+          name: test git
+          command: node .circleci/git.js
+          when: always
