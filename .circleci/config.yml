@@ -1,0 +1,114 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: npm install
+
+      - run: cd react-pond && npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # run tests!
+      - run: npm test
+      
+      - run:
+          name: test algo-complexity
+          command: node .circleci/complexity.js
+          when: always
+            
+      - run:
+          name: test async-word-count
+          command: node .circleci/word.js
+          when: always
+
+      - run:
+          name: test ds-queue
+          command: node .circleci/queue.js
+          when: always
+
+      - run:
+          name: test inheritance
+          command: node .circleci/inheritance.js
+          when: always
+      
+      - run:
+          name: test module
+          command: node .circleci/module.js
+          when: always
+
+      - run:
+          name: test recursion
+          command: node .circleci/recursion.js
+          when: always
+
+      - run:
+          name: test this
+          command: node .circleci/this.js
+          when: always
+
+      - run:
+          name: test node-req
+          command: node .circleci/node.js
+          when: always
+
+      - run:
+          name: test pond
+          command: cd react-pond && npm test
+          when: always
+
+      - run:
+          name: get pond test results
+          command: node .circleci/pond.js
+          when: always
+
+      - run:
+          name: test algo-complexity
+          command: node .circleci/complexity.js
+          when: always
+
+      - run:
+          name: test nosql-sql
+          command: node .circleci/nosql.js
+          when: always
+
+      - run:
+          name: test sql-query
+          command: node .circleci/query.js
+          when: always
+    
+      - run:
+          name: test authentication-deploy
+          command: node .circleci/authentication.js
+          when: always
+
+      - run:
+          name: test html
+          command: node .circleci/html.js
+          when: always
