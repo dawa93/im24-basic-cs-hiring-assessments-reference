@@ -37,12 +37,7 @@ jobs:
 
       # run tests!
       - run: npm test
-      
-      - run:
-          name: test algo-complexity
-          command: node .circleci/complexity.js
-          when: always
-            
+
       - run:
           name: test async-word-count
           command: node .circleci/word.js
