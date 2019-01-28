@@ -12,4 +12,6 @@
 
 ### 4. what is webpack and bundling?
 
-### 5. what is the change for ES6? give us at least 5 updates from ES5 (you can lookup MDN of course) You will have to give some examples for each case
+### 5. what is state and props in React?
+
+### 6. what is the change for ES6? give us at least 5 updates from ES5 (you can lookup MDN of course) You will have to give some examples for each case
