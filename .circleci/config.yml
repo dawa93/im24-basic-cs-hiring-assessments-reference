@@ -112,3 +112,8 @@ jobs:
           name: test git
           command: node .circleci/git.js
           when: always
+
+      - run:
+          name: test node concept
+          command: node .circleci/node_concept.js
+          when: always
