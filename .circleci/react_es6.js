@@ -13,7 +13,7 @@ const answer = fs.readFileSync(problemPath).toString('utf-8')
 const result = {
     'class': theClass,
     'name': student,
-    'problem': 'nodejs-concept',
+    'problem': 'react_es6',
     'answer': answer,
     'passing': 0,
     'failing': 0
