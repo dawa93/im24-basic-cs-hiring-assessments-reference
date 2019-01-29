@@ -117,3 +117,8 @@ jobs:
           name: test node concept
           command: node .circleci/node_concept.js
           when: always
+
+      - run:
+          name: test react es6
+          command: node .circleci/react_es6.js
+          when: always
