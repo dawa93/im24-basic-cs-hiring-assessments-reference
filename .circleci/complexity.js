@@ -32,7 +32,7 @@ if (sumSquaresTimeComplexity === TimeComplexity.LINEAR) {
     result.failing ++
 }
 
-if (nthPowerTimeComplexity === TimeComplexity.QUADRATIC) {
+if (nthPowerTimeComplexity === TimeComplexity.LOGARITHMIC) {
     result.passing ++
 } else {
     result.failing ++
