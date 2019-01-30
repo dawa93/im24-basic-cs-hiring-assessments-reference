@@ -35,6 +35,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      - run: npm test
+      
       - run:
           name: test async-word-count
           command: node .circleci/word.js

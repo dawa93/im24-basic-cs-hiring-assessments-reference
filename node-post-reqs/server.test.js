@@ -1,7 +1,16 @@
-var expect = require('chai').expect;
-var request = require('request');
+const expect = require('chai').expect;
+const request = require('request');
 
 describe('', function() {
+  let server
+  
+  beforeEach(() => {
+    server = require('./server')
+  })
+
+  afterEach(() => {
+    server.close()
+  })
 
   it('POST /hifive request should return hifive.jpg', function(done) {
     var options = {
