@@ -3,7 +3,7 @@ var = /* Missing require statment */,
  = /* Missing require statment */,
  = /* Missing require statment */
 
-http.createServer(function (request, response) {
+const server = http.createServer(function (request, response) {
   var path = url.parse(request.url, true).pathname;
 
   if (request.method === 'POST') {
@@ -23,3 +23,5 @@ http.createServer(function (request, response) {
 }).listen(4568, '127.0.0.1');
 
 console.log('Listening...');
+
+module.exports = server
