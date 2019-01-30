@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --json --outputFile=pond_results.json",
+    "test": "cross-env CI=true react-scripts test --json --forceExit --outputFile=pond_results.json",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -23,6 +23,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1"
   }
