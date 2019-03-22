@@ -4,11 +4,11 @@ const request = require('request');
 describe('', function() {
   let server
   
-  beforeEach(() => {
+  before(() => {
     server = require('./server')
   })
 
-  afterEach(() => {
+  after(() => {
     server.close()
   })
 

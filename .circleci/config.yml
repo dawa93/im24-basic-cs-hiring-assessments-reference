@@ -86,38 +86,3 @@ jobs:
           name: test algo-complexity
           command: node .circleci/complexity.js
           when: always
-
-      - run:
-          name: test nosql-sql
-          command: node .circleci/nosql.js
-          when: always
-
-      - run:
-          name: test sql-query
-          command: node .circleci/query.js
-          when: always
-    
-      - run:
-          name: test authentication-deploy
-          command: node .circleci/authentication.js
-          when: always
-
-      - run:
-          name: test html
-          command: node .circleci/html.js
-          when: always
-
-      - run:
-          name: test git
-          command: node .circleci/git.js
-          when: always
-
-      - run:
-          name: test node concept
-          command: node .circleci/node_concept.js
-          when: always
-
-      - run:
-          name: test react es6
-          command: node .circleci/react_es6.js
-          when: always

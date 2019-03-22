@@ -18,14 +18,5 @@
     "test-this": "mocha --exit this-keyword/*.test.js",
     "test-node": "mocha --exit node-post-reqs/*.test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codestates/im07-2018-07-hiring-assessments.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codestates/im07-2018-07-hiring-assessments/issues"
-  },
-  "homepage": "https://github.com/codestates/im07-2018-07-hiring-assessments#readme"
+  "author": "codestates"
 }
