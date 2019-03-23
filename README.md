@@ -14,7 +14,7 @@
 10. `student.json`에 수강생분의 기수 이름을 입력해주세요.
 
 ## Guidelines
-
+- 객관식 문제가 있습니다. 문제는 `multiple.js` 파일과 [answer sheet link](http://bit.ly/2OnvDCh) 를 참고하시어 google form을 통해 제출 하시면 됩니다.
 - Hiring Assessments 를 하면서 지금까지 학습한 부분들을 얼마나 잘 이해했는지 판단할 수 있습니다.
 - 반드시 모든 문제를 조금이라도 풀려고 시도하시길 바랍니다. 코드를 작성할 시간이 부족하더라도 코멘트를 남겨서 어떤 식으로 풀어가려고 했는지에 대해 작성하시기 바랍니다. 아예 한 문제에 대해서 아무것도 하지않고 그대로 두는것보다는 pseudocode 나 comment 를 작성하는 것이 훨씬 좋은 평가를 받게 될 것입니다.
 - 시험 완료후 반드시 pull request 를 해야 합니다. 배정된 시간에서 pull request 를 할 시간을 꼭 가지길 바랍니다.
