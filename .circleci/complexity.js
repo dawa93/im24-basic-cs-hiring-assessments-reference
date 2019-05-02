@@ -1,14 +1,9 @@
 const { exec } = require('child_process');
 const https = require('https');
-const fs = require('fs')
-const path = require('path')
 
 // read results.json and add results on the file.
 let studentInfo = require('../student.json')
 let {theClass, student} = studentInfo
-
-const problemPath = path.join(__dirname, '../algo-complexity/complexityAnalysis.md')
-const answer = fs.readFileSync(problemPath).toString('utf-8')
 
 const {
     sumSquaresTimeComplexity,
