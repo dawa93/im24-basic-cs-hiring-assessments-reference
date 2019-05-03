@@ -2,7 +2,7 @@
     YOU ATR NOT ALLOWED to run ANU OF THE CODE BELOW manually
     Try to run the code in your head ONLY
 
-    ASNWER SHEET LINK: http://bit.ly/2ZPbiex
+    ASNWER SHEET LINK: https://forms.gle/xeJCLGP61Bk1go4m9
 */
 
 /*
