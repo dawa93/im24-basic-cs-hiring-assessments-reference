@@ -1,2 +1,2 @@
 ## Recursion
-* [ ] Print every number in an array of numbers, using recursion, not loops.
+* [ ] Print every number in an array of numbers. You MUST USE RECURSION technique HERE
