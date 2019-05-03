@@ -4,7 +4,7 @@ Try to run the code in your head ONLY
 ASNWER SHEET [LINK](https://forms.gle/xeJCLGP61Bk1go4m9)
 
 
-#01
+# 01
 what is the value of x after running the code below?
 
 ```js
@@ -21,7 +21,7 @@ set(10);
 var result = get(20);
 ```
 
-#02
+# 02
 what is the value of result after running the code below?
 
 ```js
@@ -40,7 +40,7 @@ outer();
 var result = x;
 ```
 
-#03
+# 03
 what is the value of total after running the code below
 
 ```js
@@ -56,7 +56,7 @@ foo(3);
 var total = foo(6);
 ```
 
-#05
+# 05
 what is the result after running the code below
 
 ```js
@@ -69,7 +69,7 @@ var strangeAdd = function(y) {
 result = strangeAdd(10);
 ```
 
-#06
+# 06
 what will be printed in console after running the code below
 
 ```js
@@ -80,7 +80,7 @@ function foo() {
 foo();
 ```
 
-#07
+# 07
 what will be printed in console after running the code below
 
 ```js
@@ -93,7 +93,7 @@ var obj = {
 obj.foo();
 ```
 
-#08
+# 08
 what will be printed in console after running the code below
 
 ```js
@@ -110,7 +110,7 @@ var obj2 = {
 obj.foo.call(obj2);
 ```
 
-#09
+# 09
 what will be printed in console after running the code below
 
 ```js
@@ -124,7 +124,7 @@ obj2.x = 20;
 var result = obj3.x + 10;
 ```
 
-#14
+# 14
 after running the code below what message will be eventually be alerted and after how long?
 
 ```js
@@ -141,7 +141,7 @@ var bob = { name: 'Bob' };
 setTimeout(alice.sayHi.bind(alice), 1000);
 ```
 
-#15
+# 15
 after running the code below what message will be eventually be alerted and after how long?
 
 ```js
@@ -156,7 +156,7 @@ var bob = { name: 'Bob' };
 setTimeout(alice.sayHi.call(bob), 1000);
 ```
 
-#16
+# 16
 after running the code below what message will be eventually be alerted and after how long?
 
 ```js
@@ -174,7 +174,7 @@ alice.sayHi.bind(bob);
 setTimeout(alice.sayHi(), 1000);
 ```
 
-#17
+# 17
 After the following code runs and all setTimeout callbacks run, what will be the value of result?
 
 ```js
@@ -195,19 +195,19 @@ function bar(callback) {
 var result = foo();
 ```
 
-#18 
+# 18 
 After the following code runs, what will be the value of x.foo?
 
 ```js
 var x = { foo: 3 };
 var y = x;
 y = 2;
+```
 
-
-#19
+# 19
 After the following code runs, what will be the value of player.score?
 
-
+```js
 var player = { score: 3 };
 function doStuff(obj) {
   obj.score = 2;
@@ -216,7 +216,7 @@ function doStuff(obj) {
 doStuff(player);
 ```
 
-#20 Assume you have the following users and pets tables:
+# 20 Assume you have the following users and pets tables:
 
 `users` table:
 
