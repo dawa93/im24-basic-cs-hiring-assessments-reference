@@ -1,10 +1,11 @@
 var Tree = require("./tree-map");
+const expect = require("chai").expect;
 
 const verifyTree = function(result, expectation) {
-  expect(result).toBeInstanceOf(Tree);
-  expect(result.value).toEqual(expectation.value);
-  expect(result).not.toBe(expectation);
-  expect(result.children).toHaveLength(expectation.children.length);
+  expect(result).to.be.instanceOf(Tree);
+  expect(result.value).to.equal(expectation.value);
+  expect(result).not.to.equal(expectation);
+  expect(result.children).to.have.length(expectation.children.length);
 
   for (var i = 0; i < result.children.length; i++) {
     verifyTree(result.children[i], expectation.children[i]); // and each child is also verified
@@ -13,11 +14,11 @@ const verifyTree = function(result, expectation) {
 
 describe("tree map", function() {
   it("should exist on the Tree prototype", function() {
-    expect(Tree.prototype).toHaveProperty("map");
+    expect(Tree.prototype).to.have.property("map");
   });
 
   it("should be a function", function() {
-    expect(Tree.prototype.map).toBeInstanceOf(Function);
+    expect(Tree.prototype.map).to.be.an.instanceOf(Function);
   });
 
   it("should return a Tree instance", function() {
@@ -26,7 +27,7 @@ describe("tree map", function() {
       return value;
     };
     var result = root.map(identity);
-    expect(result).toBeInstanceOf(Tree);
+    expect(result).to.be.an.instanceOf(Tree);
   });
 
   it("should return a new Tree instance, not the existing one (depth 0)", function() {
@@ -35,7 +36,7 @@ describe("tree map", function() {
       return value;
     };
     var result = root.map(identity);
-    expect(result).not.toBe(root);
+    expect(result).not.to.equal(root);
   });
 
   it("should return a new Tree instance, not the existing one (depth 1)", function() {
@@ -46,9 +47,9 @@ describe("tree map", function() {
       return value;
     };
     var result = root.map(identity);
-    expect(result).toEqual(root);
-    expect(result.children[0]).not.toBe(child1);
-    expect(result.children[1]).not.toBe(child2);
+    expect(result).to.deep.equal(root);
+    expect(result.children[0]).not.to.equal(child1);
+    expect(result.children[1]).not.to.equal(child2);
   });
 
   it("should return an identical tree when the map function is identity (depth 0)", function() {

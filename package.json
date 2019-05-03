@@ -12,6 +12,7 @@
     "test": "mocha --exit **/*.test.js",
     "test-word": "mocha --exit async-word-count/*.test.js",
     "test-queue": "mocha --exit ds-queue/*.test.js",
+    "test-tree": "mocha --exit tree-map/*.test.js",
     "test-inheritance": "mocha --exit js-inheritance-pseudo-classical-alt/*.test.js",
     "test-module": "mocha --exit module-exports-nodejs/*.test.js",
     "test-recursion": "mocha --exit recursion-print-array/*.test.js",
