@@ -1,5 +1,5 @@
-const { exec } = require('child_process');
-const https = require('https');
+const { exec } = require("child_process");
+const https = require("https");
 
 // read results.json and add results on the file.
 let studentInfo = require("../student.json");
@@ -13,13 +13,13 @@ const {
 } = require("../algo-complexity/algo-complexity");
 
 const result = {
-    'class': theClass,
-    'name': student,
-    'problem': 'time-complexity',
-    // 'answer': answer,
-    'passing': 0,
-    'failing': 0
-}
+  class: theClass,
+  name: student,
+  problem: "time-complexity",
+  // 'answer': answer,
+  passing: 0,
+  failing: 0
+};
 
 if (sumSquaresTimeComplexity === TimeComplexity.LINEAR) {
   result.passing++;

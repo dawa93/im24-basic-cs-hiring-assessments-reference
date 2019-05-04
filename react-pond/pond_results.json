@@ -1,0 +1,90 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 6,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 6,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1553261194140,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["FishTable"],
+          "failureMessages": [],
+          "fullName": "FishTable should render no `FishTableRow` when given zero fish ",
+          "location": null,
+          "status": "passed",
+          "title": "should render no `FishTableRow` when given zero fish "
+        },
+        {
+          "ancestorTitles": ["FishTable"],
+          "failureMessages": [],
+          "fullName": "FishTable should render one `FishTableRow` when given one fish ",
+          "location": null,
+          "status": "passed",
+          "title": "should render one `FishTableRow` when given one fish "
+        },
+        {
+          "ancestorTitles": ["FishTable"],
+          "failureMessages": [],
+          "fullName": "FishTable should render three `FishTableRow` when given three fish ",
+          "location": null,
+          "status": "passed",
+          "title": "should render three `FishTableRow` when given three fish "
+        },
+        {
+          "ancestorTitles": ["FishTableRow"],
+          "failureMessages": [],
+          "fullName": "FishTableRow should render a dynamic name",
+          "location": null,
+          "status": "passed",
+          "title": "should render a dynamic name"
+        },
+        {
+          "ancestorTitles": ["FishTableRow"],
+          "failureMessages": [],
+          "fullName": "FishTableRow should render a dynamic image",
+          "location": null,
+          "status": "passed",
+          "title": "should render a dynamic image"
+        },
+        {
+          "ancestorTitles": ["FishTableRow"],
+          "failureMessages": [],
+          "fullName": "FishTableRow should render a dynamic description",
+          "location": null,
+          "status": "passed",
+          "title": "should render a dynamic description"
+        }
+      ],
+      "endTime": 1553261196613,
+      "message": "",
+      "name": "/Users/sangho/Desktop/codestates/hiring-assessments/react-pond/src/FishTable.test.js",
+      "startTime": 1553261195355,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}
