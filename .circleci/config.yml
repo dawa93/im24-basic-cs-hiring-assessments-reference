@@ -22,9 +22,9 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
 
       - run: npm install
 
@@ -36,7 +36,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm test
-      
+
       - run:
           name: test async-word-count
           command: node .circleci/word.js
@@ -51,7 +51,7 @@ jobs:
           name: test inheritance
           command: node .circleci/inheritance.js
           when: always
-      
+
       - run:
           name: test module
           command: node .circleci/module.js
