@@ -250,3 +250,123 @@ doStuff(player);
 | 2   | Muggles | NULL     |
 
 Write a query to select all users (and all their columns) that own at least one pet.
+
+---
+
+# Answers
+
+## 01
+
+10
+
+## 02
+
+10
+
+## 03
+
+7
+
+## 04
+
+this
+
+## 05
+
+20
+
+## 06
+
+window or global object
+
+## 07
+
+obj
+
+## 08
+
+obj2
+
+## 09
+
+30
+
+## 10
+
+O(n) Linear
+
+## 11
+
+O(n) Linear
+
+## 12
+
+O(n) Linear
+
+## 13
+
+O(1) Constant
+
+## 14
+
+Alice says hi, after 1 sec
+
+## 15
+
+Bob says hi, immediately
+
+## 16
+
+Alice says hi, immediately
+
+## 17
+
+10
+
+## 18
+
+3
+
+## 19
+
+2
+
+## 20
+
+SELECT \* FROM USERS u INNER JOIN PETS p ON u.id = p.owner_id;
+
+## 21
+
+Object Oriented Programming (OOP)
+
+## 22
+
+Node based server uses a single threaded model and can services much larger number of requests than traditional server like Apache HTTP Server.
+
+## 23
+
+Callback is an asynchronous equivalent for a function.
+
+## 24
+
+DATE
+
+## 25
+
+pull
+
+## 26
+
+Distributed Version Control System
+
+## 27
+
+git init
+
+## 28
+
+git add index.html
+
+## 29
+
+git status
