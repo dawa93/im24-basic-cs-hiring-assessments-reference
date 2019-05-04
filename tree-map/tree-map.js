@@ -1,6 +1,6 @@
 /**
  *
- * Implement a `addChild` and map` method on this Tree class, using psuedoclassical instantiation.
+ * Implement a `map` method on this Tree class, using psuedoclassical instantiation.
  *
  * Map accepts a mapping function as its only argument. It traverses the tree,
  * passing each node's value into the mapping function, and generates a new
@@ -54,3 +54,4 @@ Tree.prototype.map = function(callback) {
 };
 
 module.exports = Tree;
+/* END SOLUTION */
