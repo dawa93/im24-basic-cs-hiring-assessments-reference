@@ -3,9 +3,10 @@ Try to run the code in your head ONLY
 
 ASNWER SHEET [LINK](https://forms.gle/xeJCLGP61Bk1go4m9)
 
-
 # 01
+
 what is the value of x after running the code below?
+NOTE! we are asking for x not the reuslt HERE
 
 ```js
 var x = 30;
@@ -22,6 +23,7 @@ var result = get(20);
 ```
 
 # 02
+
 what is the value of result after running the code below?
 
 ```js
@@ -41,6 +43,7 @@ var result = x;
 ```
 
 # 03
+
 what is the value of total after running the code below
 
 ```js
@@ -57,6 +60,7 @@ var total = foo(6);
 ```
 
 # 05
+
 what is the result after running the code below
 
 ```js
@@ -70,6 +74,7 @@ result = strangeAdd(10);
 ```
 
 # 06
+
 what will be printed in console after running the code below
 
 ```js
@@ -81,6 +86,7 @@ foo();
 ```
 
 # 07
+
 what will be printed in console after running the code below
 
 ```js
@@ -94,6 +100,7 @@ obj.foo();
 ```
 
 # 08
+
 what will be printed in console after running the code below
 
 ```js
@@ -111,7 +118,8 @@ obj.foo.call(obj2);
 ```
 
 # 09
-what will be printed in console after running the code below
+
+what is the result after running the code below
 
 ```js
 var obj1 = { x: 10 };
@@ -125,49 +133,52 @@ var result = obj3.x + 10;
 ```
 
 # 14
+
 after running the code below what message will be eventually be alerted and after how long?
 
 ```js
-var name = 'Window';
+var name = "Window";
 var alice = {
-  name: 'Alice',
+  name: "Alice",
   sayHi: function() {
-    alert(this.name + ' says hi');
+    alert(this.name + " says hi");
   }
 };
 
-var bob = { name: 'Bob' };
+var bob = { name: "Bob" };
 
 setTimeout(alice.sayHi.bind(alice), 1000);
 ```
 
 # 15
+
 after running the code below what message will be eventually be alerted and after how long?
 
 ```js
-var name = 'Window';
+var name = "Window";
 var alice = {
-  name: 'Alice',
+  name: "Alice",
   sayHi: function() {
-    alert(this.name + ' says hi');
+    alert(this.name + " says hi");
   }
 };
-var bob = { name: 'Bob' };
+var bob = { name: "Bob" };
 setTimeout(alice.sayHi.call(bob), 1000);
 ```
 
 # 16
+
 after running the code below what message will be eventually be alerted and after how long?
 
 ```js
-var name = 'Window';
+var name = "Window";
 var alice = {
-  name: 'Alice',
+  name: "Alice",
   sayHi: function() {
-    alert(this.name + ' says hi');
+    alert(this.name + " says hi");
   }
 };
-var bob = { name: 'Bob' };
+var bob = { name: "Bob" };
 
 alice.sayHi.bind(bob);
 
@@ -175,6 +186,7 @@ setTimeout(alice.sayHi(), 1000);
 ```
 
 # 17
+
 After the following code runs and all setTimeout callbacks run, what will be the value of result?
 
 ```js
@@ -195,7 +207,8 @@ function bar(callback) {
 var result = foo();
 ```
 
-# 18 
+# 18
+
 After the following code runs, what will be the value of x.foo?
 
 ```js
@@ -205,6 +218,7 @@ y = 2;
 ```
 
 # 19
+
 After the following code runs, what will be the value of player.score?
 
 ```js
@@ -220,19 +234,19 @@ doStuff(player);
 
 `users` table:
 
-|id|name|
-|--|----|
-|7|Alice|
-|8|Bob|
-|9|Carl|
+| id  | name  |
+| --- | ----- |
+| 7   | Alice |
+| 8   | Bob   |
+| 9   | Carl  |
 
 `pets` table:
 
-|id|name|owner_id|
-|--|----|--|
-|2|Henry|7|
-|3|Fido|8|
-|4|Tofu|7|
-|2|Muggles|NULL|
+| id  | name    | owner_id |
+| --- | ------- | -------- |
+| 2   | Henry   | 7        |
+| 3   | Fido    | 8        |
+| 4   | Tofu    | 7        |
+| 2   | Muggles | NULL     |
 
 Write a query to select all users (and all their columns) that own at least one pet.
