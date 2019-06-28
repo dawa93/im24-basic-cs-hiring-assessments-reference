@@ -1,12 +1,11 @@
-YOU ATR NOT ALLOWED to run ANU OF THE CODE BELOW manually
-Try to run the code in your head ONLY
+> 아래의 객관식 문제에서 node/js dev console 이용하여 실행시킨 후 풀지 마세요. 직접 머리로, 손으로 계산하여 답 하셔야 합니다. 
 
-ASNWER SHEET [LINK](https://forms.gle/xeJCLGP61Bk1go4m9)
+ASNWER SHEET [LINK](https://forms.gle/oNJbSYq5GXn92L5D6)
 
 # 01
 
 what is the value of x after running the code below?
-NOTE! we are asking for x not the reuslt HERE
+NOTE! we are asking for x not the reuslt (문제는 x의 값을 묻고 있습니다)
 
 ```js
 var x = 30;
