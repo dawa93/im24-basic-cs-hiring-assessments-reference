@@ -1,6 +1,6 @@
 /**
  *
- * Implement a `addChild` and map` method on this Tree class, using psuedoclassical instantiation.
+ * Implement a `map` method on this Tree class, using psuedoclassical instantiation.
  *
  * Map accepts a mapping function as its only argument. It traverses the tree,
  * passing each node's value into the mapping function, and generates a new
@@ -33,12 +33,25 @@ var Tree = function(value) {
   this.children = [];
 };
 
+/* START SOLUTION */
+/**
+ * add an immediate child
+ * (wrap values in Tree nodes if they're not already)
+ */
 Tree.prototype.addChild = function(child) {
-  // your code here
+  if (!child || !(child instanceof Tree)) {
+    child = new Tree(child);
+  }
+  this.children.push(child);
+  // return the tree for convenience
+  return this;
 };
 
 Tree.prototype.map = function(callback) {
-  // your code here
+  return this.children.reduce(function(tree, child) {
+    return tree.addChild(child.map(callback));
+  }, new Tree(callback(this.value)));
 };
 
 module.exports = Tree;
+/* END SOLUTION */
