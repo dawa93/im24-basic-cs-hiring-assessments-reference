@@ -19,7 +19,7 @@ exports.TimeComplexity = TimeComplexity;
  * Complexity:
  */
 
-exports.sumSquaresTimeComplexity = TimeComplexity.FIX_ME; // TODO: Update this constant
+exports.sumSquaresTimeComplexity = TimeComplexity.LINEAR; // TODO: Update this constant
 
 var sumSquares = function(array) {
   return array.reduce(function(memo, val) {
@@ -34,7 +34,7 @@ var sumSquares = function(array) {
  * Complexity:
  */
 /*START SOLUTION*///O(lg(exponent))/*END SOLUTION*/
-exports.nthPowerTimeComplexity = TimeComplexity.FIX_ME; // TODO: Update this constant
+exports.nthPowerTimeComplexity = TimeComplexity.LOGARITHMIC; // TODO: Update this constant
 
 var nthPower = function(base, exponent) {
   // Base case:
@@ -56,7 +56,7 @@ var nthPower = function(base, exponent) {
  * Complexity:
  */
 /*START SOLUTION*///O(3^n)/*END SOLUTION*/
-exports.rockPaperScissorsTimeComplexity = TimeComplexity.FIX_ME; // TODO: Update this constant
+exports.rockPaperScissorsTimeComplexity = TimeComplexity.EXPONENTIAL; // TODO: Update this constant
 
 var rockPaperScissors = function(rounds) {
   var sequences = [];

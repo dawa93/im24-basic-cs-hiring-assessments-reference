@@ -10,7 +10,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "cross-env CI=true react-scripts test --json --outputFile=pond_results.json",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
