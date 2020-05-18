@@ -1,24 +1,29 @@
 /* CODE GOES HERE
  * Don't forget newlines at the end of all files :) */
 var Queue = function() {
-  // this._storage =
-  this.storage = [];
-  this.pointTarget = -1;
-  this.cntData = 0;
+  this.storage = {};
+  this.firstIndex = 0;
+  this.length = 0;
 };
 
-Queue.prototype.add = function(data) {
-  this.storage.unshift(data);
-  this.cnt++;
+Queue.prototype.add = function(item) {
+  this.storage[this.length + this.firstIndex] = item;
+  this.length++;
 };
 
 Queue.prototype.remove = function() {
-  if (this.cnt <= 0) {
-    console.log("error");
-  } else {
-    return this.storage.pop();
-    this.cntData--;
+  if (this.length <= 0) {
+    return undefined;
   }
+
+  let rmvItem = this.storage[this.firstIndex];
+  let rmvItemCopy = JSON.parse(JSON.stringify(rmvItem));
+
+  delete this.storage[this.firstIndex];
+  this.firstIndex++;
+  this.length--;
+
+  return rmvItemCopy;
 };
 
 module.exports = Queue;
