@@ -17,13 +17,12 @@ Queue.prototype.remove = function() {
   }
 
   let rmvItem = this.storage[this.firstIndex];
-  let rmvItemCopy = JSON.parse(JSON.stringify(rmvItem));
 
   delete this.storage[this.firstIndex];
   this.firstIndex++;
   this.length--;
 
-  return rmvItemCopy;
+  return rmvItem;
 };
 
 module.exports = Queue;
